@@ -2,3 +2,4 @@
 venv/
 .venv
 resources
+__pycache__
