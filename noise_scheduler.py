@@ -1,7 +1,5 @@
 import torch
 import torchvision
-import glob
-import cv2
 import matplotlib.pyplot as plt
 import torch.nn.functional as F
 import pandas as pd
@@ -51,7 +49,7 @@ def show_tensor_image(image):
 # Define beta schedule
 T = 300
 betas = linear_beta_schedule(timesteps=T)
-
+print(betas)
 # Pre-calculate different terms for closed form
 alphas = 1. - betas
 alphas_cumprod = torch.cumprod(alphas, axis=0)
