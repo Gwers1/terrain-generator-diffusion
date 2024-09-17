@@ -3,3 +3,4 @@ venv/
 .venv
 resources
 __pycache__
+model

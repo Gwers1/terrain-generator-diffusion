@@ -40,6 +40,7 @@ class SimpleUnet(nn.Module):
     def forward(self, x, timestep):
         # Embedd time
         t = self.time_mlp(timestep)
+
         # Initial conv
         x = self.conv0(x)
         # Unet
@@ -55,6 +56,7 @@ class SimpleUnet(nn.Module):
         return self.output(x)
 
 
-model = SimpleUnet()
-print("Num params: ", sum(p.numel() for p in model.parameters()))
-print(model)
+
+# model = SimpleUnet()
+# print("Num params: ", sum(p.numel() for p in model.parameters()))
+# print(model)
