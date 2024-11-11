@@ -4,3 +4,5 @@ venv/
 resources
 __pycache__
 model
+heightmaps
+terrains
